@@ -9,7 +9,8 @@ header, section, footer, aside, nav, main, article, figure {
 	background-repeat: no-repeat;
 	background-position: 100% 70%;
 	width: 100%;
-	height: 100%;
+	height: 100%;	
+	text-align: center;
 }
 
 .introHeader h2 {
