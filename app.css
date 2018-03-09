@@ -1,0 +1,114 @@
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+
+.container.introHeader{
+	min-height: 400px;
+	background-image: url('https://www.anewspring.com/wp-content/uploads/2015/10/Gamification.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 70%;
+	width: 100%;
+	height: 100%;
+}
+
+.introHeader h2 {
+	padding: 10px;
+	font-family: Lobster, Monospace;
+	font-style: bold;
+	font-size: 100px;
+	color: lavender;
+}
+
+.introHeader h3 {
+	padding: 10px;
+	color: white;
+	font-family: Lobster, Monospace;
+	font-size: 80px;
+}
+
+.btn-primary.btn-circle {
+	text-align: center;	
+	
+}
+
+.btn-circle.btn-lg{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	padding: 12px 12px;	
+	background: rgba(0,0,0, 0.32);
+	border-color: transparent;
+}
+
+.fa.fa-itch{
+	content: url('http://itch.io/static/images/itchio-textless-black.svg');
+	width: 22px;
+	height: 22px;
+}
+
+#social-tw:hover{
+	color: white;
+	background-color: #55acee;
+}
+#social-fb:hover{
+	color: white;
+	background-color: #3B5998;
+}
+#social-in:hover{
+	color: white;
+	background-color: #007bb5;
+}
+#social-itch:hover{
+	color: white;
+	background-color: #FA5C5B;
+}
+
+.connect-icon{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.profileHeader{
+	text-align: center;
+}
+
+.profile-circle{
+	border-radius: 50%;
+}
+
+/* portfolio parts*/
+.portfolio {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+	-webkit-column-gap: 1rem; /* Chrome, Safari, Opera */
+	-moz-column-gap: 1rem; /* Firefox */
+	column-gap: 1rem;
+	/*
+	-webkit-column-width:  33.33%; 
+	-moz-column-width:  33.33%;
+	width: 33.33%;
+	 */
+	text-align: center;
+}
+
+.portfolio .tile{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+	background-color: rgba(8, 25, 1, 1);
+	
+}
+
+.portfolio .tile img{
+	width: 200px;
+	height: 200px;
+	padding: 10px 0px;
+	margin: 0 auto; /* center item relates to parent */
+}
