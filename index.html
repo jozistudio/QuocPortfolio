@@ -1,13 +1,14 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="app.css" type="text/css"/>
-		<title>Quoc Doan Portfolio</title>
-  </head>
-  <body>
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app.css" type="text/css"/>
+	<title>Quoc Doan Portfolio</title>
+</head>
+<body>
     <div class="container-fluid">
 			<div class="container introHeader">
 				<div class="col-md-12">
@@ -24,7 +25,7 @@ https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
 						<a id="social-fb" class="btn btn-default btn-circle btn-lg" href="https://www.facebook.com/heosuaxongdzolua" target="_blank">
 							<i class="fa fa-facebook"></i>				
 						</a>
-						<a id="social-in" class="btn btn-default btn-circle btn-lg" href="linkedin.com/in/quoc-doan-a32b9461/" target="_blank">
+						<a id="social-in" class="btn btn-default btn-circle btn-lg" href="http://linkedin.com/in/quoc-doan-a32b9461/" target="_blank">
 							<i class="fa fa-linkedin"></i>				
 						</a>
 						<a id="social-itch" class="btn btn-default btn-circle btn-lg" href="https://itch.io/profile/jozistudio" target="_blank">
@@ -48,6 +49,9 @@ https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
 				
 				<div class="row">
 					<div class="col-md-12 text-center">
+					<!--
+					Alternatives: https://www.templatemonster.com/blog/50-free-vintage-fonts-forget-about-lobster/
+					-->
 						<p>
 					I am a graduate student with significant experience in the design, development and delivery of high quality and timely game projects. With keen attention to detail and a commitment to continuous improvement, I will add value to any professional team through building trust and strong working relationships. I am seeking a role where I can get more knowledge and continue to utilise my skills in support of quality business outcomes, where autonomy and key stakeholder engagement is encouraged.
 				</p>
@@ -70,19 +74,54 @@ https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
 					</div>
 				</div>
 				<div class="row">
-					<div class="portfolio">
+					<!-- SHOULD I USE CAROUSEL
+					https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+					-->
+					<div class="col-sm-4">
+						<div class="tile">
+							<div class="caption">
+								<p>Kiddsbay is the world’s first kid friendly business building platform that provides every kid the opportunity to achieve their dreams by unleashing their entrepreneurial spirit</p>
+								<p><a href="" type="button" class="btn btn-primary">Learn More</a></p>
+							</div>
+							<a href="https://kiddsbay.com" target="_blank">
+								<img class="img img-responsive" src="https://www.kiddsbay.com/images/Color-Logo2x.png"/>
+								<h3>KIDDSBAY</h3>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="tile">
+							<a href="https://jozistudio.itch.io/arcane-legend" target="_blank">
+								<img class="img img-responsive" src="https://goo.gl/n2n6Qy"/>
+								<h3>ARCANE LEGEND</h3>							
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
 						<div class="tile">
 							<a href="https://jozistudio.itch.io/block-puzzle" target="_blank">
 								<img class="img img-responsive" src="https://goo.gl/yxs3Bm"/>
 								<h3>BLOCK PUZZLE</h3>							
 							</a>
 						</div>
+					</div>
+					<div class="col-sm-4">
 						<div class="tile">
-							<a href="https://jozistudio.itch.io/arcane-legend" target="_blank">
-								<img class="img img-responsive" src="https://goo.gl/n2n6Qy"/>	
-								<h3>ARCANE LEGEND</h3>		
+							<a href="https://jozistudio.itch.io/hey-wake-up" target="_blank">
+								<img class="img img-responsive" src="https://img.itch.zone/aW1hZ2UvMjEwOTU0Lzk5MzIxOS5qcGc=/original/AZT5WX.jpg"/>
+								<h3>HEY, WAKE UP!!!</h3>							
 							</a>
 						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="tile">
+							<a href="https://www.researchgate.net/project/Apply-Gamification-in-Teaching" target="_blank">
+								<img class="img img-responsive" src="https://goo.gl/vFuKjb"/>
+								<h3>MATH FARM</h3>							
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
 						<div class="tile">
 							<a href="https://jozistudio.itch.io/political-campaign" target="_blank">
 								<img class="img img-responsive" src="https://goo.gl/LUh6wE"/>	
@@ -94,9 +133,40 @@ https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
 			</div>
 		</div>
 		
-		
-  </body>
-  <footer>
-    <p>Copyright by Quoc Doan - JoziStudio</p>
-  </footer>
+	<footer>
+		<div class="footer" id="footer">
+			<div class="container">
+				<p class="pull-left">Copyright © Quoc Doan 2018. All right reserved.</p>
+				<div class="pull-right">
+					<ul class="social">
+					<!-- Social Icons bootsnipp
+					https://bootsnipp.com/snippets/featured/social-icons-font-awesome-with-hover
+					-->
+						<li id="social-tw">
+							<a  href="https://twitter.com/quoctuandoan1" target="_blank">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li id="social-fb">
+							<a  href="https://www.facebook.com/heosuaxongdzolua" target="_blank">
+								<i class="fa fa-facebook"></i>				
+							</a>
+						</li>
+						<li id="social-in" >
+							<a href="http://linkedin.com/in/quoc-doan-a32b9461/" target="_blank">
+								<i class="fa fa-linkedin"></i>				
+							</a>
+						</li>
+						<li id="social-itch">
+							<a  href="https://itch.io/profile/jozistudio" target="_blank">
+								<i class="fa fa-itch"></i>				
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</footer>	
+</body>
+
 </html>
