@@ -64,6 +64,10 @@ header, section, footer, aside, nav, main, article, figure {
 	color: white;
 	background-color: #FA5C5B;
 }
+#social-github:hover{
+	color: white;
+	background-color: #000;
+}
 
 .connect-icon{
 	margin: 0;
