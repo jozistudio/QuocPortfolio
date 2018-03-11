@@ -44,8 +44,8 @@ header, section, footer, aside, nav, main, article, figure {
 
 .fa.fa-itch{
 	content: url('http://itch.io/static/images/itchio-textless-black.svg');
-	width: 22px;
-	height: 22px;
+	width: auto;
+	height: 17px;
 }
 
 #social-tw:hover{
@@ -140,47 +140,6 @@ header, section, footer, aside, nav, main, article, figure {
 	float: left;
 }
 
-/* FOOTER */
-/* References:
-https://bootsnipp.com/snippets/featured/e-commerce-footer-responsive
-
-*/
-
-.footer {
-	background: #EDEFF1;
-	height: auto;
-	padding-bottom: 30px;
-	position: relative;
-	width: 100%;
-	border-bottom: 1px solid #CCCCCC;
-	border-top: 1px solid #DDDDDD;
-}
-
-.footer ul {
-	font-size: 14px;
-	list-style-type: none;
-	margin-left: 0;
-	padding-left: 0;
-	color: #7F8C8D;
-}
-
-.social li{
-	background: none repeat scroll 0 0 #B5B5B5;
-	border: 2px solid #B5B5B5;
-	float: left;
-	height: 36px;
-	line-height: 36px;
-	text-align: center;
-	width: 36px;
-	border-radius: 50%;
-	margin: 5px 5px;
-	padding: 0px;
-	border-color: transparent;	
-}
-
-.social li a{
-	color: white;
-}
 
 
 
