@@ -1,0 +1,107 @@
+#container{
+  background: lavender;
+}
+
+.introHeader {
+  font-family: Lobster;
+  text-align: center;
+}
+
+table caption{
+	caption-side:bottom;	
+}
+
+.jumbotron img{
+  width: auto;
+  max-height: 200px;
+  margin: 0 auto;
+}
+
+blockquote{
+  background: lavender;
+	font-family: Lobster;
+	text-align: center;
+	font-style: italic;
+	font-weight: 200;
+	margin: 10px;
+}
+
+.detailSection {
+	font-family: Verdana, Geneva, sans-serif;
+	font-align: left;
+}
+
+.detailSection h2 {
+	font-family: Lobster;
+	font-weight: 200;
+}
+
+.detailSection .img-readmore {
+  width: auto;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+/* References:
+https://bootsnipp.com/snippets/featured/e-commerce-footer-responsive
+
+*/
+
+.footer {
+	background: lavender;
+	height: auto;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+
+.footer p {
+	margin: 0 auto;
+}
+
+.footer ul {
+	font-size: 14px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	color: #7F8C8D;
+}
+
+.social li{
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	width: 36px;
+	border-radius: 50%;
+	margin: 5px 5px;
+	padding: 0px;
+	border-color: transparent;	
+}
+
+.social li a{
+	color: white;
+}
+#social-tw:hover{
+	color: white;
+	background-color: #55acee;
+}
+#social-fb:hover{
+	color: white;
+	background-color: #3B5998;
+}
+#social-in:hover{
+	color: white;
+	background-color: #007bb5;
+}
+#social-itch:hover{
+	color: white;
+	background-color: #FA5C5B;
+}
