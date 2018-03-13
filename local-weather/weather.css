@@ -2,7 +2,11 @@ blockquote{
 	background: lavender;
 	font-family: Lobster;
 	text-align: center;
-	font-styte: italic;
+	font-style: italic;
 	font-weight: 200;
 	margin: 10px;
+}
+
+#temperature {
+	font-size: 30px;
 }
