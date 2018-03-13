@@ -2,6 +2,19 @@ header, section, footer, aside, nav, main, article, figure {
 	display: block;
 }
 
+/* BODY */
+
+/* --------------*/
+
+/* NAVIGATOR */
+.myNav {
+	margin-bottom: 60px;
+}
+
+
+
+/* --------------*/
+
 .container.introHeader{
 	min-height: 400px;
 	background-image: url('https://www.anewspring.com/wp-content/uploads/2015/10/Gamification.jpg');
@@ -17,7 +30,8 @@ header, section, footer, aside, nav, main, article, figure {
 	padding: 10px;
 	font-family: Lobster, Monospace;
 	font-style: bold;
-	font-size: 100px;
+	font-size: 50px;
+	font-size: 3vw;
 	color: lavender;
 }
 
@@ -127,3 +141,10 @@ header, section, footer, aside, nav, main, article, figure {
 	width: auto;
 	max-height: 100px;
 }
+
+/* SKILLS PROGRESS BAR */
+.skillSection .skills-progress{
+	margin: auto;
+	width: 50%;
+}
+/* -------------------- */
