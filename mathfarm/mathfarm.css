@@ -12,13 +12,13 @@ table caption{
 }
 
 .jumbotron img{
-  width: auto;
-  max-height: 200px;
-  margin: 0 auto;
+	width: auto;
+	max-height: 200px;
+	margin: 0 auto;
 }
 
 blockquote{
-  background: lavender;
+	background: lavender;
 	font-family: Lobster;
 	text-align: center;
 	font-style: italic;
