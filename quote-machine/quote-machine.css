@@ -1,0 +1,49 @@
+body{
+	background-color: bisque;
+}
+
+#quote-machine{
+	background-color: white;
+	height: 350px;
+}
+
+.center-div
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+blockquote{
+	background: lavender;
+	font-family: Lobster;
+	text-align: center;
+	font-styte: italic;
+	font-weight: 200;
+	margin: 10px;
+}
+
+.networkContainer{
+	text-align: center; /* align center its children */
+}
+
+.networkItem {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	line-height: 36px;
+	border-radius: 5px;
+}
+
+#shareTwitter {	
+	background-color: #55acee;
+}
+
+#shareFacebook {
+	background-color: #3B5998;
+}
+.networkItem i{
+	color: white;
+}

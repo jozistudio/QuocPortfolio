@@ -6,17 +6,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="quote-machine.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://jozistudio.github.io/QuocPortfolio/footer.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="https://jozistudio.github.io/QuocPortfolio/favicon.ico"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-	
+	<!-- prevent undefined when using document.get(element) -->
+	<script src="quote-machine.js"></script>
 	<title>Random Quote</title>
 	
 
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="container">
+		<div id="quote-machine" class="container center-div">
 			<!-- title -->
 			<div class="row">
 				<div class="col-md-12 text-center">				
@@ -28,7 +30,7 @@
 			<!-- End title -->
 			<!-- Quote -->
 			<div class="row">
-				<div class="quoteSection">
+				<div class="quoteSection" style="display: none;">
 					<blockquote class="blockquote-reserve">
 						<h3 id="quote" class="text-success">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
 						<footer id="author">Lorem Ipsum</footer>
@@ -36,17 +38,27 @@
 				</div>
 			</div>
 			<!-- End Quote -->
-			
+			<!-- Share on social network -->
 			<div class="row">
-				
-				
-			
+				<div class="col-md-12">
+					<div class="networkContainer">
+						<div id="shareTwitter" class="networkItem">
+							<a " class="btn btn-responsive">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</div>
+						<!--div id="shareFacebook" class="networkItem">
+							<a  class="btn btn-responsive">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</div-->
+					</div>
+				</div>
 			</div>
-			
+			<!-- End Share -->
 		</div>
 	</div>
-	<!-- prevent undefined when using document.get(element) -->
-	<script src="/quote-machine/quote-machine.js"></script>
+
 </body>
 <footer>
 
