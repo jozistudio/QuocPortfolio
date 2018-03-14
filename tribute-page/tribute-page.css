@@ -1,0 +1,71 @@
+body
+{
+  background-color: blue;
+}
+
+.center-div
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container-center{
+	/*
+	position: relative;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	*/
+	 
+    margin: auto;
+    width: 80%;
+}
+
+
+#title {
+  font-family: Lobster;
+  text-align: center;
+}
+
+
+#imageQuote{
+  text-align: center;
+}
+#imageQuote img{
+	width: 80%
+  height: auto;
+}
+
+.item {
+  position: relative;  
+  display: inline;
+  width: 100%;
+}
+.item .year{
+  float:left;
+  width: 10%;
+  background-color: silver;
+  height: 100%;
+}
+.item .event{
+  float:left;
+  width: 90%;
+  height: 100%;
+  background-color: #f6fbfc;
+}
+
+blockquote{
+	background: lavender;
+	font-family: Lobster;
+	text-align: center;
+	font-styte: italic;
+	font-weight: 200;
+	margin: 10px;
+}
+.referenceList {
+  padding-left: 20px;
+}
