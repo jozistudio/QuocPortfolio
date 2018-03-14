@@ -11,3 +11,7 @@ blockquote{
 	font-size: 30px;
 }
 
+.div-center{
+	margin: auto;
+	width: 100%;
+}
