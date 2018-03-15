@@ -157,7 +157,7 @@ $(document).ready(function() {
 			return;
 		}
 		//xhr.setRequestHeader('X-Custom-Header', 'value');
-		xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
+	//	xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
 		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 		//xhr.setRequestHeader('origin', link);
 		//xhr.setRequestHeader("origin", "*");
