@@ -138,7 +138,7 @@ $(document).ready(function() {
 			xhr = null;
 		}
 		
-		xhr.withCredentials = true;
+		//xhr.withCredentials = true;
 		return xhr;
 	}
 	// Helper method to parse the title tag from the response.
@@ -157,8 +157,8 @@ $(document).ready(function() {
 			return;
 		}
 		//xhr.setRequestHeader('X-Custom-Header', 'value');
-	//	xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
-		xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://jozistudio.github.io');
+		//xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
+		//xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://jozistudio.github.io');
 		//xhr.setRequestHeader('origin', link);
 		//xhr.setRequestHeader("origin", "*");
 		
