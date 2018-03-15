@@ -31,7 +31,7 @@ $(document).ready(function() {
 		if (e.keyCode == 13){
 			console.log("Enter is pressed.");
 			var keyword = $('#searchInput').val();
-			var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=";
+			var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&origin=*&format=json&srsearch=";
 			url += keyword + "&utf8=";
 			console.log(url);
 			
@@ -154,24 +154,31 @@ $(document).ready(function() {
 			alert('CORS not supported');
 			return;
 		}
-		
+		//xhr.setRequestHeader('X-Custom-Header', 'value');
+		//xhr.setRequestHeader('Access-Control-Allow-Origin', link);
+		//xhr.setRequestHeader('origin', link);
+		xhr.send();
 		// Response handlers.
 		xhr.onload = function() {
 			var resp = xhr.responseText;
 			console.log(resp);
 			// parse data from json
 			showResult(resp);
-			//var title = getTitle(resp);
+			
 			//alert('Response from CORS request to ' + url + ':' + title);
 		}
 		
 		xhr.onerror = function() {
 			alert('Woops, there was an error making the request.');
-			var resp = xhr.responseText;
-			console.log('Still got json --- ' + resp);
+			//var resp = xhr.responseText;
+			//console.log('Still got json --- ' + resp);
 		}
 		
-		xhr.send();
+		xhr.onloadend = function(){
+			//alert(xhr.responseText);
+		}
+		
+		
 	}
 	/* END CORS ----------------------*/
 	/* 
