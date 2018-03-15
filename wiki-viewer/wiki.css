@@ -1,12 +1,73 @@
-blockquote{
-	background: lavender;
-	font-family: Lobster;
-	text-align: center;
-	font-style: italic;
-	font-weight: 200;
-	margin: 10px;
+body
+{
+  background-color: lavender;
 }
 
-#temperature {
-	font-size: 30px;
+.center-both-div
+{
+	position: absolute; /* original: absolute */
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80%;
+	padding: 10px;
 }
+
+.center-horizontal-div{
+	position: absolute; /* original: absolute */
+	left: 50%;
+	top: 0%;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	width: 80%;
+	padding: 10px;
+}
+
+.fa.big-icon{
+  font-size: 80px;  
+}
+/* Wikipedia Item */
+.items{
+  width: 100%;
+  position: absolute; /* REQUIRED - if not, the filled items will push up any elements above it */
+}
+
+.item{
+	padding-left: 5px;
+	margin-top: 5px;
+	background-color: lavender;
+}
+
+.item .itemBtn{
+	text-align: left;
+	white-space: initial;
+	background-color: #67ac78;
+	color: black;
+	border-radius: 0px;
+}
+
+.item:hover{
+	background-color: #98c91c;
+}
+/* END WIKIPEDIA ITEM ----*/
+
+/* Search Box with an 'x' button 
+Link: https://stackoverflow.com/questions/20062218/how-do-i-clear-a-search-box-with-an-x-in-bootstrap-3
+*/
+#searchInput{
+  width: 200px;  
+}
+
+#searchClearBtn{
+  position: absolute; /*The element is positioned relative to its first positioned (not static) ancestor element*/
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
+}
+/*------------------------------------*/
