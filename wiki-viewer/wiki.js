@@ -129,6 +129,7 @@ $(document).ready(function() {
 		if ("withCredentials" in xhr){
 			// XHR for Chrome/Firefox/Opera/Safari.
 			xhr.open(method, url, true);
+			xhr.withCredentials = true;
 		} else if (typeof XDomainRequest != "undefined"){
 			// XDomainRequest for IE.
 			xhr = new XDomainRequest();
@@ -166,6 +167,8 @@ $(document).ready(function() {
 		
 		xhr.onerror = function() {
 			alert('Woops, there was an error making the request.');
+			var resp = xhr.responseText;
+			console.log('Still got json --- ' + resp);
 		}
 		
 		xhr.send();
