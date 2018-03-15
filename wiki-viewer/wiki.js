@@ -31,7 +31,7 @@ $(document).ready(function() {
 		if (e.keyCode == 13){
 			console.log("Enter is pressed.");
 			var keyword = $('#searchInput').val();
-			var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&origin=*&format=json&srsearch=";
+			var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&gsrsearch=";
 			url += keyword + "&utf8=";
 			console.log(url);
 			
@@ -44,7 +44,7 @@ $(document).ready(function() {
 			https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=pizza&utf8=
 			for readable purpose
 			https://en.wikipedia.org/w/api.php?action=query&list=search&format=jsonfm&srsearch=pizza&utf8=
-			
+			// https://en.wikipedia.org/w/api.php?action=query&format=json&gsrlimit=15&generator=search&origin=*&gsrsearch=pizza
 			case: no result in search
 			https://en.wikipedia.org/w/api.php?action=query&list=search&format=jsonfm&srsearch=pizzaddd2&utf8
 			*/
@@ -129,7 +129,7 @@ $(document).ready(function() {
 		if ("withCredentials" in xhr){
 			// XHR for Chrome/Firefox/Opera/Safari.
 			xhr.open(method, url, true);
-			xhr.withCredentials = true;
+			
 		} else if (typeof XDomainRequest != "undefined"){
 			// XDomainRequest for IE.
 			xhr = new XDomainRequest();
@@ -137,6 +137,8 @@ $(document).ready(function() {
 		} else {
 			xhr = null;
 		}
+		
+		xhr.withCredentials = true;
 		return xhr;
 	}
 	// Helper method to parse the title tag from the response.
@@ -155,9 +157,11 @@ $(document).ready(function() {
 			return;
 		}
 		//xhr.setRequestHeader('X-Custom-Header', 'value');
-		//xhr.setRequestHeader('Access-Control-Allow-Origin', link);
+		xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
+		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 		//xhr.setRequestHeader('origin', link);
-		xhr.send();
+		//xhr.setRequestHeader("origin", "*");
+		
 		// Response handlers.
 		xhr.onload = function() {
 			var resp = xhr.responseText;
@@ -173,12 +177,12 @@ $(document).ready(function() {
 			//var resp = xhr.responseText;
 			//console.log('Still got json --- ' + resp);
 		}
-		
+		console.log(xhr);
 		xhr.onloadend = function(){
 			//alert(xhr.responseText);
 		}
 		
-		
+		xhr.send();
 	}
 	/* END CORS ----------------------*/
 	/* 
