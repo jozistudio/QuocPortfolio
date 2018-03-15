@@ -158,7 +158,7 @@ $(document).ready(function() {
 		}
 		//xhr.setRequestHeader('X-Custom-Header', 'value');
 	//	xhr.setRequestHeader('Access-Control-Request-Origin', 'http://localhost');
-		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+		xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://jozistudio.github.io');
 		//xhr.setRequestHeader('origin', link);
 		//xhr.setRequestHeader("origin", "*");
 		
