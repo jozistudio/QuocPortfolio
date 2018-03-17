@@ -30,8 +30,11 @@ $(document).ready(function() {
 	$('#searchInput').on("keyup", function(e){
 		if (e.keyCode == 13){
 			console.log("Enter is pressed.");
+			//var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&gsrsearch=";
+			// from this https://forum.freecodecamp.org/t/mediawiki-api-issue/127509/4
+			// suggest that URL should have origin=* for non-authenticaed request
+			var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=";
 			var keyword = $('#searchInput').val();
-			var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&gsrsearch=";
 			url += keyword + "&utf8=";
 			console.log(url);
 			
@@ -92,7 +95,7 @@ $(document).ready(function() {
 			*/
 			var itemHTML = '<div class="item">';
 			// add external link for item
-			var anc = '<a class="btn btn-responsive itemBtn" href="https://en.wikipedia.org/?curid=' + item.pageid + '" target="_blank"';
+			var anc = '<a class="btn btn-responsive itemBtn" href="https://en.wikipedia.org/?curid=' + item.pageid + '" target="_blank">';
 			
 			// get title
 			var title = '<h2>' + item.title + '</h2>';
