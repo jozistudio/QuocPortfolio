@@ -139,7 +139,7 @@ header, section, footer, aside, nav, main, article, figure {
 
 .thumbnail img{
 	width: auto;
-	max-height: 100px;
+	height: 300px;
 }
 
 /* SKILLS PROGRESS BAR */
