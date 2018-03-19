@@ -39,6 +39,7 @@ body
 	background-color: #a0a0d1;
 	margin: 5px auto;
 	width: 100%;
+	min-width: 300px;
 }
 
 .banner {

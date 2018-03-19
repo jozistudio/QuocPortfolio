@@ -136,10 +136,13 @@ header, section, footer, aside, nav, main, article, figure {
 .thumbnail a {
 	padding: 5px;
 }
+.thumbnail a:hover, a:focus{
+	text-decoration: none;
+}
 
 .thumbnail img{
 	width: auto;
-	height: 300px;
+	max-height: 130px;
 }
 
 /* SKILLS PROGRESS BAR */
