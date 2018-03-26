@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="freeCodeCamp - Calculator">
+    <meta name="author" content="Quoc Doan">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- END FONTS -->
+
+    <!-- BOOTSTRAP 4.0 PACKAGE-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- END BOOTSTRAP 4.0 -->
+
+    <!--   Shuffle your scripts/css HERE  -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.7.2.js"></script>
+    <!-- END JQUERY -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://jozistudio.github.io/QuocPortfolio/favicon.ico" />
+	<link href="calculator.css" rel="stylesheet" type="text/css">
+	<script src="calculator.js"></script>
+    <!--   End  -->   
+
+    <title>Javascipt Calculator</title>
+  </head>
+  <body>
+    <div id="main-container" class="center-both-div">
+      <div class="container-fluid calculator">
+        <div class="mx-auto px-4">
+          <div class="row">
+            <!-- TITLE -->
+            <div class="col-md-12 title">
+              <p>ELECTRONIC CALCULATOR</p>
+            </div>
+            <!-- END TITLE -->
+          </div>
+          <div class="row">
+            <!-- DISPLAY -->
+            <div class="col-md-12 display">
+              <p id="parameter" class="parameter">0</p> <!-- Max 15 chars -->
+              <p id="fomula" class="fomula">0</p> <!-- Max 30 chars -->
+            </div>
+            <!-- END DISPLAY -->
+          </div>
+          <div class="row">
+
+            <table class="table">
+              <tr>
+                <td>
+                  <button id="acBtn" type="button" class="btn calBtn" value="AC" style="background-color: #7e3838;">AC
+                  </button>
+                </td>
+                <td>
+                  <button id="ceBtn" type="button" class="btn calBtn" value="CE" style="background-color: #7e3838;">CE
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn calBtn oprBtn" value="÷">÷
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn calBtn oprBtn" value="x">x
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                  <button type="button" class="btn calBtn numBtn" value="7">7
+                  </button>
+                </td>
+                <td> 
+                  <button type="button" class="btn calBtn numBtn" value="8">8
+                  </button></td>
+                <td> 
+                  <button type="button" class="btn calBtn numBtn" value="9">9
+                  </button></td>
+                <td> 
+                  <button type="button" class="btn calBtn oprBtn" value="-">-
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" class="btn calBtn numBtn" value="4">4
+                  </button>
+                </td>
+                <td><button type="button" class="btn calBtn numBtn" value="5">5
+                  </button></td>
+                <td><button type="button" class="btn calBtn numBtn" value="6">6
+                  </button></td>
+                <td><button type="button" class="btn calBtn oprBtn" value="+">+                    </button></td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn calBtn numBtn" value="1">1
+                  </button></td>
+                <td><button type="button" class="btn calBtn numBtn" value="2">2
+                  </button></td>
+                <td><button type="button" class="btn calBtn numBtn" value="3">3
+                  </button></td>
+                <td rowspan="2"><button type="button" id="calBtn" class="btn calBtn" value="equal" style="height: 100px" >=
+                  </button></td>
+              </tr>
+              <tr>
+                <td colspan="2"><button type="button" class="btn calBtn numBtn" value="0"  style="width: 105px" >0
+                  </button></td>
+
+                <td>
+                  <button id="floatBtn" type="button" class="btn calBtn" value=".">.
+                  </button>
+                </td>
+
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <h4 class="copyright">Coded by <a type="butto" href="https://www.linkedin.com/in/quoctuandoan
+" target="_blank">Quoc Doan</a></h4>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+body {
+  background-color: lavender;
+  display: block;
+}
+
+.center-both-div {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  
+  /* For center vertically and horizontally*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.calculator{
+  background-color: silver;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px grey;
+  border-width: think;
+  border-style: solid;
+  border-color: grey;
+}
+/* TITLE */
+.title{
+  
+  border-radius: 10px 10px 0 0;
+  padding-top: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Faster One', cursive;
+}
+
+/* END TITLE */
+
+/* DISPLAY */
+.display {
+  background-color: #ffffffb8; 
+  border-radius: 5px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.display .parameter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.display .fomula {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
+
+/* END DISPLAY*/
+
+/* TABLE */
+.table td{
+  /* if we use this, we CANNOT use rowspan/colspan
+  width: 25%;
+  display: inline-block;
+  */
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+
+.calBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+  
+}
+
+.calBtn {
+  width: 45px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  background-color: darkslategray;
+  border: none;
+  border-color: darkslategray;
+  box-shadow: 3px 3px 3px grey;
+  display: block;
+  margin: auto;
+}
+.calBtn:hover, focus{
+  cursor: pointer;
+}
+/* END TABLE*/
+
+/* COPYRIGHT */
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-family: lobster;
+}
+.copyright a:hover{
+  text-decoration: none;
+}
