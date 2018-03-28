@@ -26,7 +26,7 @@ $(document).ready(function() {
   var floating = false;
 
   // convert string to operator
-  var operatorsStr = ["+", "-", "x", "÷"];
+  var operatorsStr = ["+", "-", "x", "?"];
   var operatorsFunc = [
     function(a,b){return a+b;},
     function(a,b){return a-b;},
@@ -36,9 +36,9 @@ $(document).ready(function() {
 
   function convertFomulaToChain(){
     var text = fomula.html();
-    var re = /(\d+\.*)+|([\+\-x\÷])+/g;
+    var re = /(\d+\.*)+|([\+\-x\?])+/g;
     var matches = text.match(re);
-    console.log(matches);
+    console.log("SHOW ME MATCHES: " + matches);
     if (matches != null)
       chain = matches;
   }
@@ -216,7 +216,9 @@ $(document).ready(function() {
     }
     var num1 = NaN;
     var opr = "";
-
+    
+    /* THIS METHOD IS NOT WORKING FOR THE ORDER 
+	OF OPERATORS --> Alternative solution: eval()
     // calculating from chain
     chain.forEach(function(i){
       console.log(i);
@@ -245,6 +247,24 @@ $(document).ready(function() {
       }
     });
 
+    // calculate multiply and divide first
+    for (var i = 0; i < chain.length; i++){
+      var item = chain[i];
+      //opr = operatorsStr.indexOf(item) > -1 ? item: null;
+      if (isNaN(Number(item))){
+        // item is an operator
+        
+        
+      } else {
+        
+      }
+    }
+    */
+    var fn = chain.join(" ");
+    fn = fn.replace("x", "*");
+    fn =  fn.replace("?", "/");
+    console.log(fn);
+    num1 = eval(fn);
     // display result
     num1 = Math.round(num1 * 100)/100;
     parameter.html(num1);
