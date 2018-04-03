@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Pomodoro Clock - freeCodeCamp">
+      <meta name="author" content="Quoc Doan">
+      <!-- FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- END FONTS -->
+
+      <!-- BOOTSTRAP 4.0 PACKAGE-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <!-- END BOOTSTRAP 4.0 -->
+
+      <!--   Shuffle your scripts/css HERE  -->
+      <!-- JQUERY -->
+      <script src="https://code.jquery.com/jquery-1.7.2.js"></script>
+      <!-- END JQUERY -->
+      <link rel="shortcut icon" type="image/x-icon" href="https://jozistudio.github.io/QuocPortfolio/favicon.ico" />
+      <link href="pomodoro.css" rel="stylesheet" type="text/css">
+      <script src="pomodoro.js"></script>
+      <!--   End  -->   
+
+      <title>Pomodoro Clock</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row"  style="margin-top: 200px;">
+          <div class="col">
+            <div class="text-center info pl-5">
+              <p>BREAK LENGTH</p>
+              <div>
+                <button id="breakDec" type="button" class="btn btn-responsive btn-control"  value="breakDec">
+                  <i class="fa fa-minus"></i>
+                </button>
+                <p id="break" style="display: inline-block;">5</p>
+                <button type="button" id="breakInc" class="btn btn-responsive btn-control"  value="breakInc">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center info pr-5">
+              <p>SESSION LENGTH</p>
+              <button type="button" id="sessionDec" class="btn btn-responsive btn-control"  value="sessionDec">
+                <i class="fa fa-minus"></i>
+              </button>
+              <p id="session" style="display: inline-block;">25</p>
+              <button type="button" id="sessionInc" class="btn btn-responsive btn-control"  value="sessionInc">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col timerSection">
+            <div class="timer">
+              <div class="timerBg"></div>
+              <div class="timerInfo">
+                <p id="type">Session</p>
+                <p id="clock">25:00</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
